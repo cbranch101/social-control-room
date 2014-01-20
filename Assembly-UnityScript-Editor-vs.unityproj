@@ -76,6 +76,9 @@
  <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
  </Reference>
+ <Reference Include="Assets\plugins\ICSharpCode.SharpZipLib">
+ <HintPath>Assets\plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
  <Reference Include="Assets\UnityTestTools\UnitTesting\Editor\NSubstitute\NSubstitute">
  <HintPath>Assets\UnityTestTools\UnitTesting\Editor\NSubstitute\NSubstitute.dll</HintPath>
  </Reference>
@@ -105,9 +108,6 @@
  </Reference>
  <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions">
  <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Assets\plugins\ICSharpCode.SharpZipLib">
- <HintPath>Assets\plugins\ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
