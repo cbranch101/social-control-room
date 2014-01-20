@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\TestScripts\JSON Tests\UnityScript\Test_UnityScript.js" />
      <Compile Include="Assets\UnityTestTools\Examples\AngryBotsTests\Explosions\Scripts\EffectSequencer.js" />
      <Compile Include="Assets\UnityTestTools\Examples\AngryBotsTests\Explosions\Scripts\ElectricShockwave.js" />
      <Compile Include="Assets\UnityTestTools\Examples\AngryBotsTests\Explosions\Scripts\ExplosionControl.js" />
@@ -160,7 +161,15 @@
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\ParticleAdditive.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\LaserScope.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\SuperSimpleSelfIllumination.shader" />
+     <None Include="Assets\TestScripts\JSON Tests\TroubleShoot.txt" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\ParticleBlend.shader" />
+ <Reference Include="Assets\plugins\ICSharpCode.SharpZipLib">
+ <HintPath>Assets\plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{E2BFA566-9838-2C98-99FC-C9A108D28867}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
