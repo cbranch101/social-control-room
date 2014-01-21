@@ -5,6 +5,7 @@ using SimpleJSON;
 public class WWWTest : MonoBehaviour {
 
 	private Texture testImage;
+	public GUITest gui;
 
 	// Use this for initialization
 	IEnumerator Start () {
@@ -16,7 +17,7 @@ public class WWWTest : MonoBehaviour {
 		string imageURL = testData["message"]["data"]["post_picture_url"];
 		WWW imageHandler = new WWW(imageURL);
 		yield return imageHandler;
-		testImage = imageHandler.texture;
+		gui.setWebImage(imageHandler.texture);
 	}
 	
 	// Update is called once per frame
@@ -24,11 +25,6 @@ public class WWWTest : MonoBehaviour {
 
 	}
 
-	void OnGUI() {
-		if(testImage != null) {
-			GUI.DrawTexture(new Rect(0, 0, testImage.height, testImage.width), testImage);
-		}
-	}
 
 
 
