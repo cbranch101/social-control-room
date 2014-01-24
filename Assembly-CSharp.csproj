@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\TestScripts\BobsDiceTestScript.cs" />
      <Compile Include="Assets\TestScripts\BobsTestScript.cs" />
      <Compile Include="Assets\TestScripts\ClipBoard.cs" />
      <Compile Include="Assets\TestScripts\GUITest.cs" />
