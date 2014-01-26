@@ -99,23 +99,16 @@ ModelImporter:
     4300022: Box005
     4300024: Box006
     4300026: Box007
-    7400000: Startup
-    7400002: Switch Left
-    7400004: Switch Right
-    7400006: Button Push Lower Left
-    7400008: Button Push Lower Right
-    7400010: Button Push Top Right
-    7400012: Button Push Top Left
-    7400014: 20
-    7400016: 32
-    7400018: 37
-    7400020: 40
-    7400022: 43
-    7400024: 50
-    7400026: 62
-    7400028: 67
-    7400030: 70
-    7400032: 73
+    7400000: 20
+    7400002: 32
+    7400004: 37
+    7400006: 41
+    7400008: 43
+    7400010: 62
+    7400012: 67
+    7400014: 71
+    7400016: 73
+    7400018: Start
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -132,566 +125,6 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
-    - serializedVersion: 16
-      name: Startup
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 10
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Switch Left
-      takeName: Take 001
-      firstFrame: 20
-      lastFrame: 45
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Switch Right
-      takeName: Take 001
-      firstFrame: 50
-      lastFrame: 75
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Button Push Lower Left
-      takeName: Take 001
-      firstFrame: 80
-      lastFrame: 90
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Button Push Lower Right
-      takeName: Take 001
-      firstFrame: 90
-      lastFrame: 100
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Button Push Top Right
-      takeName: Take 001
-      firstFrame: 100
-      lastFrame: 110
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: Button Push Top Left
-      takeName: Take 001
-      firstFrame: 110
-      lastFrame: 120
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
     - serializedVersion: 16
       name: 20
       takeName: Take 001
@@ -933,10 +366,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: 40
+      name: 41
       takeName: Take 001
-      firstFrame: 40
-      lastFrame: 40.0999985
+      firstFrame: 41
+      lastFrame: 41.0999985
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1017,86 +450,6 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 43
       lastFrame: 43.0999985
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: BN_Root
-        weight: 1
-      - path: BN_Root/Bone002
-        weight: 1
-      - path: BN_Root/Bone003
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002
-        weight: 1
-      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
-        weight: 1
-      - path: BN_Root/Box001
-        weight: 1
-      - path: BN_Root/Box004
-        weight: 1
-      - path: BN_Root/Box005
-        weight: 1
-      - path: BN_Root/Box006
-        weight: 1
-      - path: BN_Root/Box007
-        weight: 1
-      - path: BN_Root/Cylinder001
-        weight: 1
-      - path: BN_Root/Dummy001
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Bone005
-        weight: 1
-      - path: BN_Root/Dummy001/Bone004/Box002
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Bone006
-        weight: 1
-      - path: BN_Root/Dummy001/Bone007/Box003
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone008/Box008
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone009/Box011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010
-        weight: 1
-      - path: BN_Root/Dummy001/Bone010/Box009
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011
-        weight: 1
-      - path: BN_Root/Dummy001/Bone011/Box010
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-    - serializedVersion: 16
-      name: 50
-      takeName: Take 001
-      firstFrame: 50
-      lastFrame: 50.0999985
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1333,10 +686,10 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: 70
+      name: 71
       takeName: Take 001
-      firstFrame: 70
-      lastFrame: 70.0999985
+      firstFrame: 71
+      lastFrame: 71.0999985
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1492,10 +845,90 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Start
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_Root
+        weight: 1
+      - path: BN_Root/Bone002
+        weight: 1
+      - path: BN_Root/Bone003
+        weight: 1
+      - path: BN_Root/Bone003/Cylinder002
+        weight: 1
+      - path: BN_Root/Bone003/Cylinder002/GeoSphere001
+        weight: 1
+      - path: BN_Root/Box001
+        weight: 1
+      - path: BN_Root/Box004
+        weight: 1
+      - path: BN_Root/Box005
+        weight: 1
+      - path: BN_Root/Box006
+        weight: 1
+      - path: BN_Root/Box007
+        weight: 1
+      - path: BN_Root/Cylinder001
+        weight: 1
+      - path: BN_Root/Dummy001
+        weight: 1
+      - path: BN_Root/Dummy001/Bone004
+        weight: 1
+      - path: BN_Root/Dummy001/Bone004/Bone005
+        weight: 1
+      - path: BN_Root/Dummy001/Bone004/Box002
+        weight: 1
+      - path: BN_Root/Dummy001/Bone007
+        weight: 1
+      - path: BN_Root/Dummy001/Bone007/Bone006
+        weight: 1
+      - path: BN_Root/Dummy001/Bone007/Box003
+        weight: 1
+      - path: BN_Root/Dummy001/Bone008
+        weight: 1
+      - path: BN_Root/Dummy001/Bone008/Box008
+        weight: 1
+      - path: BN_Root/Dummy001/Bone009
+        weight: 1
+      - path: BN_Root/Dummy001/Bone009/Box011
+        weight: 1
+      - path: BN_Root/Dummy001/Bone010
+        weight: 1
+      - path: BN_Root/Dummy001/Bone010/Box009
+        weight: 1
+      - path: BN_Root/Dummy001/Bone011
+        weight: 1
+      - path: BN_Root/Dummy001/Bone011/Box010
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .100000001
+    globalScale: .00999999978
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
