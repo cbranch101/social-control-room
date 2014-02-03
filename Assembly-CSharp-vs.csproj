@@ -51,6 +51,7 @@
      <Compile Include="Assets\TestScripts\ClipBoard.cs" />
      <Compile Include="Assets\TestScripts\GUITest.cs" />
      <Compile Include="Assets\TestScripts\JSON Tests\CSharp\Test_CSharp.cs" />
+     <Compile Include="Assets\TestScripts\LeverTest.cs" />
      <Compile Include="Assets\TestScripts\WWWTest.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponentExt.cs" />
