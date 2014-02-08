@@ -1,15 +1,15 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{3357CF9A-C70F-0DCF-680B-DEF27ABEDCD0}"
+# Visual Studio 2008
+
+Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-CSharp-firstpass.csproj", "{3357CF9A-C70F-0DCF-680B-DEF27ABEDCD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3CD4F65E-4353-6E16-AE5B-4DDC05BDE30C}"
+Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-CSharp.csproj", "{3CD4F65E-4353-6E16-AE5B-4DDC05BDE30C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}"
+Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-CSharp-Editor.csproj", "{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}"
 EndProject
-Project("{b955b5aa-9c1c-4cd6-9a10-9e34431be3eb}") = "Assembly-UnityScript", "Assembly-UnityScript.unityproj", "{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}"
+Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-UnityScript.unityproj", "{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}"
 EndProject
-Project("{b955b5aa-9c1c-4cd6-9a10-9e34431be3eb}") = "Assembly-UnityScript-Editor", "Assembly-UnityScript-Editor.unityproj", "{F96DE636-991A-FC7C-E401-C798041FB4BE}"
+Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-UnityScript-Editor.unityproj", "{F96DE636-991A-FC7C-E401-C798041FB4BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3357CF9A-C70F-0DCF-680B-DEF27ABEDCD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3357CF9A-C70F-0DCF-680B-DEF27ABEDCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3357CF9A-C70F-0DCF-680B-DEF27ABEDCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,12 +29,19 @@ Global
 		{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F96DE636-991A-FC7C-E401-C798041FB4BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F96DE636-991A-FC7C-E401-C798041FB4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F96DE636-991A-FC7C-E401-C798041FB4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F96DE636-991A-FC7C-E401-C798041FB4BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+			GlobalSection(MonoDevelopProperties) = preSolution
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -88,7 +91,5 @@ Global
 		$6.inheritsSet = null
 		$6.scope = text/x-unitytxt
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
+
 EndGlobal

@@ -16,9 +16,6 @@ public class DebugMouseGUI : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		GUILayout.BeginArea (new Rect(0, 0, 100, 100));
-			GUILayout.Box (webImage);
-		Debug.Log("test");
 
 	}
 }
