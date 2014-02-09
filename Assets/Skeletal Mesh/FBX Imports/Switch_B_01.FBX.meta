@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: beb2617343381ca47a34c4627d5946d1
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BN_CTRL_Knob
+    100002: BN_SLV_Hole
+    100004: CTRL_Knob
+    100006: GEO_CTRL_Base
+    100008: GEO_Knob
+    100010: GEO_SLV_Base
+    100012: SLV_Hole
+    100014: SPLN_CTRL_LR
+    100016: SPLN_CTRL_Root
+    100018: SPLN_CTRL_UD
+    100020: SPLN_Root
+    100022: SPLN_SLV_LR
+    100024: SPLN_SLV_Root
+    100026: SPLN_SLV_UD
+    100028: //RootNode
+    400000: BN_CTRL_Knob
+    400002: BN_SLV_Hole
+    400004: CTRL_Knob
+    400006: GEO_CTRL_Base
+    400008: GEO_Knob
+    400010: GEO_SLV_Base
+    400012: SLV_Hole
+    400014: SPLN_CTRL_LR
+    400016: SPLN_CTRL_Root
+    400018: SPLN_CTRL_UD
+    400020: SPLN_Root
+    400022: SPLN_SLV_LR
+    400024: SPLN_SLV_Root
+    400026: SPLN_SLV_UD
+    400028: //RootNode
+    2300000: GEO_CTRL_Base
+    3300000: GEO_CTRL_Base
+    4300000: GEO_CTRL_Base
+    4300002: GEO_SLV_Base
+    4300004: GEO_Knob
+    7400000: LF_DN
+    7400002: LF_UP
+    7400004: RT_DN
+    7400006: RT_UP
+    9500000: //RootNode
+    13700000: GEO_Knob
+    13700002: GEO_SLV_Base
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: LF_DN
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 3
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GEO_CTRL_Base
+        weight: 1
+      - path: GEO_Knob
+        weight: 1
+      - path: GEO_SLV_Base
+        weight: 1
+      - path: SPLN_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD/BN_CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SLV_Hole
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD/BN_SLV_Hole
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: LF_UP
+      takeName: Take 001
+      firstFrame: 12
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GEO_CTRL_Base
+        weight: 1
+      - path: GEO_Knob
+        weight: 1
+      - path: GEO_SLV_Base
+        weight: 1
+      - path: SPLN_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD/BN_CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SLV_Hole
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD/BN_SLV_Hole
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: RT_DN
+      takeName: Take 001
+      firstFrame: 22
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GEO_CTRL_Base
+        weight: 1
+      - path: GEO_Knob
+        weight: 1
+      - path: GEO_SLV_Base
+        weight: 1
+      - path: SPLN_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD/BN_CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SLV_Hole
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD/BN_SLV_Hole
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: RT_UP
+      takeName: Take 001
+      firstFrame: 32
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GEO_CTRL_Base
+        weight: 1
+      - path: GEO_Knob
+        weight: 1
+      - path: GEO_SLV_Base
+        weight: 1
+      - path: SPLN_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_CTRL_Root/SPLN_CTRL_LR/SPLN_CTRL_UD/BN_CTRL_Knob
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SLV_Hole
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD
+        weight: 1
+      - path: SPLN_Root/SPLN_SLV_Root/SPLN_SLV_LR/SPLN_SLV_UD/BN_SLV_Hole
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
