@@ -4,18 +4,20 @@ using System.Collections;
 public class LeverTest : MonoBehaviour {
 	
 	public float horizontalPercentFlipped = 0.0f;
-	public float verticalPercentFlipped = 0.0f;
+	//public float verticalPercentFlipped = 0.0f;
 	public float flipSpeed = 0.1f;
+	private bool isFlipped = false;
 	protected Animator animator;
 	protected bool isGrabbed = false;
 	public MeshRenderer targetMesh;
 	public string horizontalParameter;
-	public string verticalParamter;
+	private AudioSource audioSource;
+	//public string verticalParamter;
 	
 	
 	// Use this for initialization
 	void Start () {
-		
+		audioSource = GetComponent<AudioSource>();
 		animator = GetComponent<Animator>();
 		animator.SetFloat(horizontalParameter, 0.5f);
 	}
@@ -29,8 +31,27 @@ public class LeverTest : MonoBehaviour {
 		changeSwitchColor ();
 		updateFlippedPercent();
 		animator.SetFloat(horizontalParameter, horizontalPercentFlipped);
-		animator.SetFloat(verticalParamter, verticalPercentFlipped);
+		triggerSound ();
+		//animator.SetFloat(verticalParamter, verticalPercentFlipped);
 		
+	}
+
+	void triggerSound() {
+		if(horizontalPercentFlipped > .9f) {
+
+			if(!audioSource.isPlaying && !isFlipped) {
+				audioSource.Play();
+				isFlipped = true;
+			}
+		}
+		if(horizontalPercentFlipped < .1f) {
+
+			if(!audioSource.isPlaying && isFlipped) {
+				isFlipped = false;
+				audioSource.Play();
+			}
+
+		}
 	}
 	
 	void changeSwitchColor() {
@@ -56,8 +77,8 @@ public class LeverTest : MonoBehaviour {
 	
 	void updateFlippedPercent() {
 		if(isGrabbed) {
-			verticalPercentFlipped = verticalPercentFlipped + (flipSpeed * Input.GetAxis("Mouse Y") * -1);
-			horizontalPercentFlipped = horizontalPercentFlipped + (flipSpeed * Input.GetAxis("Mouse X"));
+			//verticalPercentFlipped = verticalPercentFlipped + (flipSpeed * Input.GetAxis("Mouse Y") * -1);
+			horizontalPercentFlipped = horizontalPercentFlipped + (flipSpeed * Input.GetAxis("Mouse X") * -1);
 
 			//percentFlipped = Mathf.Clamp(newPercentFlipped, 0.0f, 1.0f);
 		}
