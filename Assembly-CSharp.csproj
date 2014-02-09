@@ -49,6 +49,7 @@
      <Compile Include="Assets\TestScripts\BobsDiceTestScript.cs" />
      <Compile Include="Assets\TestScripts\BobsTestScript.cs" />
      <Compile Include="Assets\TestScripts\ClipBoard.cs" />
+     <Compile Include="Assets\TestScripts\CurveAnimationTest.cs" />
      <Compile Include="Assets\TestScripts\DebugMouseGUI.cs" />
      <Compile Include="Assets\TestScripts\GUITest.cs" />
      <Compile Include="Assets\TestScripts\JSON Tests\CSharp\Test_CSharp.cs" />
