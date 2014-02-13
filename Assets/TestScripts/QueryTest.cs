@@ -17,8 +17,9 @@ public class QueryTest : MonoBehaviour {
 		string url = "http://dev.fbdev.me/apps/clay/social_control_api/posts.php";
 		WWW queryHandler = new WWW(url);
 		yield return queryHandler;
-		JSONNode testData = JSON.Parse (queryHandler.text);
-		JSONNode posts = testData["posts"];
+		JSONNode postResponse = JSON.Parse (queryHandler.text);
+		JSONNode posts = postResponse["posts"];
+		handlePosts (posts);
 //		string imageURL = testData["message"]["data"]["post_picture_url"];
 //		WWW imageHandler = new WWW(imageURL);
 //		yield return imageHandler;
@@ -28,8 +29,20 @@ public class QueryTest : MonoBehaviour {
 
 	void handlePosts(JSONNode posts) {
 		foreach(JSONNode post in posts.Childs) {
-			Debug.Log (post["message"]);
+			StartCoroutine(initializePost(post));
+
 		}
+	}
+
+	IEnumerator initializePost(JSONNode post) {
+		PostTest postObject = postGuesser.allPosts[post["name"]];
+		string postText = post["message"];
+		bool postIsCorrect = post["is_correct"].AsBool;
+		string imageURL = post["image_url"];
+		WWW imageHandler = new WWW(imageURL);
+		yield return imageHandler;
+		Texture postImage = imageHandler.texture;
+		postObject.initialize(postText, postImage, postIsCorrect);
 	}
 	
 	// Update is called once per frame

@@ -13,6 +13,7 @@ public class PostTest : MonoBehaviour {
 		text = newText;
 		image = newImage;
 		isCorrect = newIsCorrect;
+		Debug.Log (text);
 	}
 	
 }

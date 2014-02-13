@@ -7,12 +7,14 @@ public class GUITest : MonoBehaviour {
 	public int messageBoxWidth;
 	public int spaceBetweenBoxes;
 	public string statusMessage;
-	public int rightImpressions = 100;
-	public int leftImpressions = 200;
+	public PostTest leftPost;
+	public PostTest rightPost;
+	private PostGuesser postGuesser;
 
 	// Use this for initialization
 	void Start () {
-	
+		postGuesser = GameObject.Find ("Posts").GetComponent<PostGuesser>();
+
 	}
 
 	public void setWebImage(Texture image) {
@@ -49,21 +51,20 @@ public class GUITest : MonoBehaviour {
 			GUILayout.BeginHorizontal();
 				GUILayout.BeginArea (new Rect (0, 0, messageBoxWidth, messageBoxWidth));
 					GUILayout.BeginVertical();
-						GUILayout.Label ("Did you miss the premiere of the Bonnie & Clyde Movie Event? Fear not, catch the Barrow Gang online for free! Part 1: http://aetv.us/IB2U9X Part 2: http://aetv.us/1jIwvg4");
-							GUILayout.Box (webImage);
+						GUILayout.Label (leftPost.text);
+							GUILayout.Box (leftPost.image);
 						
 							if(GUILayout.Button ("Pick Me", GUILayout.Height (75))) {
-								statusMessage = leftImpressions > rightImpressions ? "Correct" : "Incorrect";
+								postGuesser.guess ("left");							
 							}
 					GUILayout.EndVertical();
 				GUILayout.EndArea();
 				GUILayout.BeginArea (new Rect (messageBoxWidth + spaceBetweenBoxes,  0, messageBoxWidth, messageBoxWidth));
 					GUILayout.BeginVertical();
-						GUILayout.Label ("Did you miss the premiere of the Bonnie & Clyde Movie Event? Fear not, catch the Barrow Gang online for free! Part 1: http://aetv.us/IB2U9X Part 2: http://aetv.us/1jIwvg4");
-						GUILayout.Box (webImage);
+						GUILayout.Label (rightPost.text);
+						GUILayout.Box (rightPost.image);
 						if(GUILayout.Button ("Pick Me", GUILayout.Height (75))) {
-							statusMessage = rightImpressions > leftImpressions ? "Correct" : "Incorrect";
-							
+							postGuesser.guess ("right");		
 						}
 					GUILayout.EndVertical();
 				GUILayout.EndArea();
