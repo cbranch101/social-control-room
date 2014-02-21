@@ -1,0 +1,309 @@
+fileFormatVersion: 2
+guid: 6985546d5da32c546a796f08ffbb4e4f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BN_Button
+    100002: BN_DMY_Root
+    100004: BN_Leaver
+    100006: Button_Base
+    100008: Cylinder001
+    100010: FB_Image_1
+    100012: FB_Image_2
+    100014: FB_Text_1
+    100016: FB_Text_2
+    100018: Light_1
+    100020: Light_2
+    100022: //RootNode
+    400000: BN_Button
+    400002: BN_DMY_Root
+    400004: BN_Leaver
+    400006: Button_Base
+    400008: Cylinder001
+    400010: FB_Image_1
+    400012: FB_Image_2
+    400014: FB_Text_1
+    400016: FB_Text_2
+    400018: Light_1
+    400020: Light_2
+    400022: //RootNode
+    2300000: FB_Image_1
+    2300002: FB_Image_2
+    2300004: FB_Text_1
+    2300006: FB_Text_2
+    2300008: Light_1
+    2300010: Light_2
+    3300000: FB_Image_1
+    3300002: FB_Image_2
+    3300004: FB_Text_1
+    3300006: FB_Text_2
+    3300008: Light_1
+    3300010: Light_2
+    4300000: Cylinder001
+    4300002: FB_Image_2
+    4300004: FB_Image_1
+    4300006: Light_1
+    4300008: Light_2
+    4300010: FB_Text_1
+    4300012: FB_Text_2
+    4300014: Button_Base
+    7400000: Switch is Left
+    7400002: Switch is Right
+    7400004: Button Pushed
+    7400006: Nothing Happening
+    9500000: //RootNode
+    13700000: Button_Base
+    13700002: Cylinder001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Switch is Left
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 2.0999999
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_DMY_Root
+        weight: 1
+      - path: BN_DMY_Root/BN_Button
+        weight: 1
+      - path: BN_DMY_Root/BN_Leaver
+        weight: 1
+      - path: Button_Base
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      - path: FB_Image_1
+        weight: 1
+      - path: FB_Image_2
+        weight: 1
+      - path: FB_Text_1
+        weight: 1
+      - path: FB_Text_2
+        weight: 1
+      - path: Light_1
+        weight: 1
+      - path: Light_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Switch is Right
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 10.1000004
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_DMY_Root
+        weight: 1
+      - path: BN_DMY_Root/BN_Button
+        weight: 1
+      - path: BN_DMY_Root/BN_Leaver
+        weight: 1
+      - path: Button_Base
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      - path: FB_Image_1
+        weight: 1
+      - path: FB_Image_2
+        weight: 1
+      - path: FB_Text_1
+        weight: 1
+      - path: FB_Text_2
+        weight: 1
+      - path: Light_1
+        weight: 1
+      - path: Light_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Button Pushed
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_DMY_Root
+        weight: 1
+      - path: BN_DMY_Root/BN_Button
+        weight: 1
+      - path: BN_DMY_Root/BN_Leaver
+        weight: 1
+      - path: Button_Base
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      - path: FB_Image_1
+        weight: 1
+      - path: FB_Image_2
+        weight: 1
+      - path: FB_Text_1
+        weight: 1
+      - path: FB_Text_2
+        weight: 1
+      - path: Light_1
+        weight: 1
+      - path: Light_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Nothing Happening
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BN_DMY_Root
+        weight: 1
+      - path: BN_DMY_Root/BN_Button
+        weight: 1
+      - path: BN_DMY_Root/BN_Leaver
+        weight: 1
+      - path: Button_Base
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      - path: FB_Image_1
+        weight: 1
+      - path: FB_Image_2
+        weight: 1
+      - path: FB_Text_1
+        weight: 1
+      - path: FB_Text_2
+        weight: 1
+      - path: Light_1
+        weight: 1
+      - path: Light_2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
