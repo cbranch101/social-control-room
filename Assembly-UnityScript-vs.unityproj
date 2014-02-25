@@ -143,8 +143,11 @@
      <Compile Include="Assets\UnityTestTools\Examples\AngryBotsTests\Scripts\Weapons\SlowBulletFire.js" />
      <Compile Include="Assets\UnityTestTools\Examples\AngryBotsTests\Scripts\Weapons\SlowBulletFireWithNoise.js" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\Cursor.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Gradient.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\ParticleAdditiveBlend.shader" />
+     <None Include="Assets\Text Box\readme.txt" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\Additive.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text CG.cginc" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Resources\HeightDepthOfField.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Resources\BlurPassesForDof.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\Fallback.shader" />
@@ -153,16 +156,23 @@
      <None Include="Assets\UnityTestTools\LICENSE.txt" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\CharacterSelfIlluminationReflective.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Resources\ColoredNoise.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Smooth Shadow.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\PlanarRealtimeReflection.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\ReflectiveBackgroundPlanar.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Smooth Outline.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\EnemySelfIlluminationReflective.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\AngryInclude.cginc" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Resources\MobileBloom.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\ParticleAdditive.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Smooth Bold.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Smooth.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Alpha Test.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Smooth Fade.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\LaserScope.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\BackgroundAndCharacters\SuperSimpleSelfIllumination.shader" />
      <None Include="Assets\TestScripts\JSON Tests\TroubleShoot.txt" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\ParticleBlend.shader" />
+     <None Include="Assets\Text Box\Shaders\CC Text Alpha Blend.shader" />
  <Reference Include="Assets\plugins\ICSharpCode.SharpZipLib">
  <HintPath>Assets\plugins\ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
