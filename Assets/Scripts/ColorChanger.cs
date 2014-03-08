@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MouseBehavior : MonoBehaviour {
+public class ColorChanger : MonoBehaviour {
 
-	private MouseOverTarget previousMouseOverTarget;
+	public Renderer targetMesh;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,12 +12,10 @@ public class MouseBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+	
 	}
 
-	void detectMouseOver() {
-
-
-
+	public void setColor(Color colorToSet) {
+		targetMesh.renderer.material.color = colorToSet;
 	}
 }

@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ChangeColorOnMouseOver.cs" />
+     <Compile Include="Assets\Scripts\ColorChanger.cs" />
+     <Compile Include="Assets\Scripts\DetectMouseOver.cs" />
      <Compile Include="Assets\Scripts\HighlightedMesh.cs" />
      <Compile Include="Assets\Scripts\MouseBehavior.cs" />
      <Compile Include="Assets\Scripts\MouseOverTarget.cs" />
