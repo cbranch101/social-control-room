@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="MouseTest" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-03-06" time="21:02:28">
+  <environment nunit-version="0.0.0.0" clr-version="2.0.50727.1433" os-version="Unix 12.5.0.0" platform="Unix" cwd="/Users/cbranch101/SocialControlRoom" machine-name="new-host-3.home" user="cbranch101" user-domain="new-host-3.home" />
+  <culture-info current-culture="" current-uiculture="" />
+  <test-case name="MouseTest" executed="True" result="Cancelled" success="False" time="5.004">
+    <failure>
+      <message><![CDATA[IntegrationTest started (MouseTest)
+IntegrationTest timeout (MouseTest)
+]]></message>
+      <stack-trace><![CDATA[]]></stack-trace>
+    </failure>
+  </test-case>
+</test-results>
