@@ -2,16 +2,21 @@
 using System.Collections;
 
 public class ChangeColorOnMouseOver : MonoBehaviour, MouseOverable {
-
-
+	
+	public Renderer targetMesh;
+	private ColorManager colorManager;
 	private ColorChanger colorChanger;
-	public Color mouseOverColor;
-	public Color normalColor;
+	private Color mousedOverColor;
 
 	// Use this for initialization
 	void Start () {
+		colorManager = GameObject.Find ("ColorManager").GetComponent<ColorManager>();
+		mousedOverColor = colorManager.mouseOverColor;
+		if(gameObject.GetComponent<ColorChanger>() == null) {
+			gameObject.AddComponent<ColorChanger>();
+		}
 		colorChanger = gameObject.GetComponent<ColorChanger>();
-		colorChanger.setColor(normalColor);
+		colorChanger.targetMesh = targetMesh;
 	}
 	
 	// Update is called once per frame
@@ -20,10 +25,11 @@ public class ChangeColorOnMouseOver : MonoBehaviour, MouseOverable {
 	}
 
 	public void onMouseOverEnter() {
-		colorChanger.setColor (mouseOverColor);
+		colorChanger.setColor(mousedOverColor);
 	}
 
 	public void onMouseOverExit() {
-		colorChanger.setColor (normalColor);
+		colorChanger.setColor(colorChanger.defaultColor);
 	}
+
 }

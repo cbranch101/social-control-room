@@ -7,7 +7,7 @@ public class TextTest : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		textMesh = GetComponent<CCText>();
-		textMesh.Text = "Did you miss the premiere of the Bonnie & Clyde Movie Event? Fear not, catch the Barrow Gang online for free! \r\n\r\nPart 1: http://aetv.us/IB2U9X\r\nPart 2: http://aetv.us/1jIwvg4";
+		textMesh.Text = "'Eat all the food!' - 11 things our creative director, Christy, learned at SXSW: http://blog.movementstrategy.com/11-things-i-learned-at-sxsw/";
 	}
 	
 	// Update is called once per frame

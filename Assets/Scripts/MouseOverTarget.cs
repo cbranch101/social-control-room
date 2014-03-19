@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class MouseOverTarget : MonoBehaviour {
 	
-	private MouseOverable mouseOverable;
+	private bool isMousedOver;
+	private MouseOverable[] mouseOverables;
+
 	// Use this for initialization
 	void Start () {
-		mouseOverable = gameObject.GetComponent(typeof(MouseOverable)) as MouseOverable;
-		if(mouseOverable == null) {
-			Debug.Log ("No Mouserable component attatched to " + gameObject.name);
-		}
+		mouseOverables = gameObject.GetInterfaces<MouseOverable>();
 
 	}
 	
@@ -18,12 +18,27 @@ public class MouseOverTarget : MonoBehaviour {
 		
 	}
 
-	public void triggerOnMouseOverEnter() {
-		mouseOverable.onMouseOverEnter();
+	public bool targetIsMousedOver() {
+		return isMousedOver;
 	}
 
+	public void triggerOnMouseOverEnter() {
+		isMousedOver = true;
+		foreach(MouseOverable mouseOverable in mouseOverables) {
+			if(mouseOverable != null) {
+				mouseOverable.onMouseOverEnter();
+			}
+		}
+
+	}
+	
 	public void triggerOnMouseOverExit() {
-		mouseOverable.onMouseOverExit();
+		isMousedOver = false;
+		foreach(MouseOverable mouseOverable in mouseOverables) {
+			if(mouseOverable != null) {
+				mouseOverable.onMouseOverExit();
+			}
+		}
 	}
 
 }
