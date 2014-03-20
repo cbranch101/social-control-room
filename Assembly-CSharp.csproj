@@ -62,6 +62,9 @@
      <Compile Include="Assets\Scripts\MechanicalMove.cs" />
      <Compile Include="Assets\Scripts\MouseBehavior.cs" />
      <Compile Include="Assets\Scripts\MouseOverTarget.cs" />
+     <Compile Include="Assets\Scripts\PostDataHandler.cs" />
+     <Compile Include="Assets\Scripts\PostDataImage.cs" />
+     <Compile Include="Assets\Scripts\PostDataText.cs" />
      <Compile Include="Assets\TestScripts\BobsDiceTestScript.cs" />
      <Compile Include="Assets\TestScripts\BobsTestScript.cs" />
      <Compile Include="Assets\TestScripts\ClipBoard.cs" />
