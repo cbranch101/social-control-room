@@ -13,7 +13,7 @@ public class GUITest : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		postGuesser = GameObject.Find ("Posts").GetComponent<PostGuesser>();
+//		postGuesser = GameObject.Find ("Posts").GetComponent<PostGuesser>();
 
 	}
 
@@ -55,7 +55,7 @@ public class GUITest : MonoBehaviour {
 							GUILayout.Box (leftPost.image);
 						
 							if(GUILayout.Button ("Pick Me", GUILayout.Height (75))) {
-								postGuesser.guess ("left");							
+//								postGuesser.guess ("left");							
 							}
 					GUILayout.EndVertical();
 				GUILayout.EndArea();
@@ -64,7 +64,7 @@ public class GUITest : MonoBehaviour {
 						GUILayout.Label (rightPost.text);
 						GUILayout.Box (rightPost.image);
 						if(GUILayout.Button ("Pick Me", GUILayout.Height (75))) {
-							postGuesser.guess ("right");		
+//							postGuesser.guess ("right");		
 						}
 					GUILayout.EndVertical();
 				GUILayout.EndArea();

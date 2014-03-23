@@ -6,6 +6,13 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 	public float lockDistance = .01f;
 	private bool positiveEngaged = false;
 	private bool negativeEngaged = false;
+	public delegate void LockEnterAction(bool isPositive);
+	public delegate void LockExitAction(bool isPositive);
+	public event LockEnterAction OnLockEnter;
+	public event LockExitAction OnLockExit;
+
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -38,18 +45,36 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 
 		if(currentPosition >= negativeLockPoint && currentPosition <= positiveLockPoint) {
 			if(positiveEngaged || negativeEngaged) {
-				positiveEngaged = false;
-				negativeEngaged = false;
+				triggerExitEvent();
 			}
 		}
 	}
 
+	void triggerExitEvent() {
+
+		if(OnLockExit != null) {
+			if(positiveEngaged) {
+				OnLockExit(true);
+			} else {
+				OnLockExit(false);
+			}
+		}
+		positiveEngaged = false;
+		negativeEngaged = false;
+
+	}
+
 	void triggerPositiveEvent() {
-		Debug.Log ("POSITIVE");
+		if(OnLockEnter != null) {
+			OnLockEnter(true);
+		}
+
 	}
 
 	void triggerNegativeEvent() {
-		Debug.Log ("NEGATIVE");
+		if(OnLockEnter != null) {
+			OnLockEnter(false);
+		}
 	}
 
 	public void onMechanicalUpdate(Vector2 position, Vector2 speed) {

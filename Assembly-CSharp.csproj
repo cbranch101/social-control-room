@@ -48,9 +48,12 @@
   <ItemGroup>
      <Compile Include="Assets\Prefabs\ColorManager.cs" />
      <Compile Include="Assets\Prefabs\GrabTarget.cs" />
+     <Compile Include="Assets\ReturnToCenter.cs" />
      <Compile Include="Assets\Scripts\ApplyMechanicalMoveOnGrab.cs" />
+     <Compile Include="Assets\Scripts\ButtonTest.cs" />
      <Compile Include="Assets\Scripts\ChangeColorOnGrab.cs" />
      <Compile Include="Assets\Scripts\ChangeColorOnMouseOver.cs" />
+     <Compile Include="Assets\Scripts\ClickButtonOnGrab.cs" />
      <Compile Include="Assets\Scripts\ColorChanger.cs" />
      <Compile Include="Assets\Scripts\DetectMouseOver.cs" />
      <Compile Include="Assets\Scripts\GameObjectExtensions.cs" />
@@ -65,6 +68,7 @@
      <Compile Include="Assets\Scripts\PostDataHandler.cs" />
      <Compile Include="Assets\Scripts\PostDataImage.cs" />
      <Compile Include="Assets\Scripts\PostDataText.cs" />
+     <Compile Include="Assets\Scripts\PostGuesser.cs" />
      <Compile Include="Assets\TestScripts\BobsDiceTestScript.cs" />
      <Compile Include="Assets\TestScripts\BobsTestScript.cs" />
      <Compile Include="Assets\TestScripts\ClipBoard.cs" />
@@ -75,10 +79,8 @@
      <Compile Include="Assets\TestScripts\JSON Tests\CSharp\Test_CSharp.cs" />
      <Compile Include="Assets\TestScripts\LeverTest.cs" />
      <Compile Include="Assets\TestScripts\LeverV2Test.cs" />
-     <Compile Include="Assets\TestScripts\PostGuesser.cs" />
      <Compile Include="Assets\TestScripts\PostTest.cs" />
      <Compile Include="Assets\TestScripts\QueryEventTest.cs" />
-     <Compile Include="Assets\TestScripts\QueryTest.cs" />
      <Compile Include="Assets\TestScripts\TextTest.cs" />
      <Compile Include="Assets\TestScripts\WWWTest.cs" />
      <Compile Include="Assets\Text Box\CCFont.cs" />

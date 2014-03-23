@@ -7,10 +7,18 @@ public class PostDataHandler : MonoBehaviour {
 	public string postDataURL = "none";
 	private Hashtable postData = new Hashtable();
 	public delegate void PostDataAction(Hashtable postData);
+
 	public static event PostDataAction OnPostDataReceived;
 
 	// Use this for initialization
 	void Start () {
+		StartCoroutine("updatePostData");
+		ClickButtonOnGrab targetButton = GameObject.Find ("Button_Base").GetComponent<ClickButtonOnGrab>();
+		targetButton.OnClick += onMainButtonClick;
+
+	}
+
+	void onMainButtonClick() {
 		StartCoroutine("updatePostData");
 	}
 	

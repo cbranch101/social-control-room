@@ -11,6 +11,10 @@ public class GrabTarget : MonoBehaviour {
 		}
 		set{
 			bool willBeGrabbed = value;
+			if(!isGrabbed && willBeGrabbed) {
+				triggerOnGrabEnter();
+			}
+
 			if(isGrabbed && !willBeGrabbed) {
 				triggerOnGrabExit();
 			}
@@ -48,6 +52,13 @@ public class GrabTarget : MonoBehaviour {
 		}
 	}
 
+	void triggerOnGrabEnter() {
+		foreach(Grabbable grabbable in grabbables) {
+			grabbable.onGrabEnter();
+		}
+	}
+
+
 	void triggerOnGrabExit() {
 		foreach(Grabbable grabbable in grabbables) {
 			grabbable.onGrabExit();
@@ -66,5 +77,6 @@ public interface Grabbable {
 	
 	void onGrabExit();
 	void onGrab();
+	void onGrabEnter();
 
 }

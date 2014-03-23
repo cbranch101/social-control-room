@@ -67,4 +67,5 @@ public class GrabbableMechanicalCollider : MonoBehaviour {
 		mechanicalController.yPositionParameter = yPositionParameter;
 		mechanicalController.isTwoDimensional = isTwoDimensional;
 	}
+	
 }

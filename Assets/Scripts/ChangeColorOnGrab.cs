@@ -28,6 +28,11 @@ public class ChangeColorOnGrab : MonoBehaviour, Grabbable{
 		
 	}
 	
+	public void onGrabEnter() {
+
+	}	
+
+
 	public void onGrab() {
 		colorChanger.setColor(grabbedColor);
 	}	
