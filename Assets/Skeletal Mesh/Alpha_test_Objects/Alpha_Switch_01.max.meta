@@ -1,0 +1,108 @@
+fileFormatVersion: 2
+guid: c6957f3f1a16fb74bb59081a2e0a6c27
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BOO
+    100004: Dummy001
+    100006: Dummy002
+    100008: Dummy003
+    100010: Latch_LF_Base
+    100012: Latch_LF_Latch
+    100014: Latch_RT_Base
+    100016: Latch_RT_Latch
+    100018: Trunk_Drawer
+    100020: Trunk_Drawer_Handle
+    100022: Trunk_Top
+    400000: //RootNode
+    400002: BOO
+    400004: Dummy001
+    400006: Dummy002
+    400008: Dummy003
+    400010: Latch_LF_Base
+    400012: Latch_LF_Latch
+    400014: Latch_RT_Base
+    400016: Latch_RT_Latch
+    400018: Trunk_Drawer
+    400020: Trunk_Drawer_Handle
+    400022: Trunk_Top
+    2300000: //RootNode
+    2300002: BOO
+    2300004: Latch_LF_Base
+    2300006: Latch_LF_Latch
+    2300008: Latch_RT_Base
+    2300010: Latch_RT_Latch
+    2300012: Trunk_Drawer
+    2300014: Trunk_Top
+    3300000: //RootNode
+    3300002: BOO
+    3300004: Latch_LF_Base
+    3300006: Latch_LF_Latch
+    3300008: Latch_RT_Base
+    3300010: Latch_RT_Latch
+    3300012: Trunk_Drawer
+    3300014: Trunk_Top
+    4300000: Trunk_Root
+    4300002: Trunk_Top
+    4300004: Latch_LF_Base
+    4300006: Latch_LF_Latch
+    4300008: Latch_RT_Base
+    4300010: Latch_RT_Latch
+    4300012: Trunk_Drawer
+    4300014: BOO
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
