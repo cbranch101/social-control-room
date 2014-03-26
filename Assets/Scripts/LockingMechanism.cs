@@ -10,12 +10,15 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 	public delegate void LockExitAction(bool isPositive);
 	public event LockEnterAction OnLockEnter;
 	public event LockExitAction OnLockExit;
+	public AudioClip switchMovingSound;
+	private AudioSource audioSource;
+	private float lastStopped = 0;
 
 
 
 	// Use this for initialization
 	void Start () {
-		
+		audioSource = GameObject.Find ("AudioSource").GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -78,7 +81,21 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 	}
 
 	public void onMechanicalUpdate(Vector2 position, Vector2 speed) {
+		if(speed.x != 0f) {
+			if(!audioSource.isPlaying) {
+				audioSource.clip = switchMovingSound;
+				audioSource.Play();
+			}
+		} else {
+			float timeSinceStop = Time.time - lastStopped;
+			if(audioSource.isPlaying && timeSinceStop > .8f) {
+				audioSource.Pause();
+				lastStopped = Time.time;
+			}
+		} 
 		triggerLockEvent (position, speed);
 		
 	}
+
+
 }

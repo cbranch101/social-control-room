@@ -9,6 +9,8 @@ public class PostGuesser : MonoBehaviour {
 	private string selectedPost = null;
 	public Light rightLight;
 	public Light leftLight;
+	public delegate void GuessAction(bool isCorrect);
+	public static event GuessAction OnPostGuess;
 	// Use this for initialization
 	void Start () {
 		rightLight.enabled = false;
@@ -39,7 +41,16 @@ public class PostGuesser : MonoBehaviour {
 			if(isCorrect) {
 				Light lightToTurnOn = selectedPost == "right" ? rightLight : leftLight;
 				lightToTurnOn.enabled = true;
+			} else {
+
 			}
+			triggerOnGuess(isCorrect);
+		}
+	}
+
+	void triggerOnGuess(bool isCorrect) {
+		if(OnPostGuess != null) {
+			OnPostGuess(isCorrect);
 		}
 	}
 

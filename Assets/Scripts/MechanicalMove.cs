@@ -73,7 +73,7 @@ public class MechanicalMove : MonoBehaviour {
 
 	float getUpdatedPositionAxis(float movementAmountValue, float currentPosition, bool isInverted) {
 		float inversionFactor = isInverted ? 1.0f : -1.0f;
-		return currentPosition + (movementAmountValue * movementRate * inversionFactor);
+		return currentPosition + (Time.deltaTime * movementAmountValue * movementRate * inversionFactor);
 	}
 	
 

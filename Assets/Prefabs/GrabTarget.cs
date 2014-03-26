@@ -33,8 +33,7 @@ public class GrabTarget : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		bool mouseIsDown = Input.GetMouseButton(0);
-		bool isMousedOver = mouseOverTarget.targetIsMousedOver();
+
 		if(!IsGrabbed) {
 			IsGrabbed = mouseOverTarget.targetIsMousedOver() ? Input.GetMouseButton(0) : false;
 		} else {
