@@ -14,9 +14,14 @@ public class MechanicalMove : MonoBehaviour {
 	public bool invertXMovement = false;
 	public bool invertYMovement = false;
 	public UsesMechanicalPosition usesMechanicalPosition;
-	private List<Mechanism> mechanisms = new List<Mechanism>(); 
+	public delegate void UpdateAction(Vector2 position, Vector2 speed);
+	public event UpdateAction OnMechanicalMove;
+	public event UpdateAction OnEnterMechanicalMove;
+	public event UpdateAction OnExitMechanicalMove;
+
 
 	private Vector2 position;
+	private bool isMoving = false;
 	public Vector2 Position {
 		get {
 			return position;
@@ -26,6 +31,17 @@ public class MechanicalMove : MonoBehaviour {
 			speed.x = newPosition.x - position.x;
 			speed.y = newPosition.y - position.y;
 			usesMechanicalPosition.onSettingMechanicalPosition(newPosition);
+			bool willBeMoving = (speed.x != 0f);
+			if(willBeMoving && !isMoving) {
+				OnEnterMechanicalMove(speed, position);
+				isMoving = true;
+			}
+
+			if(!willBeMoving && isMoving) {
+				OnExitMechanicalMove(speed, position);
+				isMoving = false;
+			}
+
 			position = newPosition;
 		}
 	}
@@ -38,16 +54,7 @@ public class MechanicalMove : MonoBehaviour {
 	public Vector2 getSpeed() {
 		return speed;
 	}
-
-	public void setMechanisms() {
-		foreach(Transform child in gameObject.transform) {
-			Mechanism mechanism = child.transform.gameObject.GetComponent(typeof(Mechanism)) as Mechanism;
-			if(mechanism != null) {
-				mechanisms.Add (mechanism);
-			}
-		}
-	}
-
+	
 	public void setStartPosition() {
 		Vector2 startPosition = new Vector2(xStart, yStart);
 		Position = startPosition;
@@ -56,13 +63,7 @@ public class MechanicalMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		updatePosition();
-		updateMechansims();
-	}
-
-	void updateMechansims() {
-		foreach(Mechanism mechanism in mechanisms) {
-			mechanism.onMechanicalUpdate(this.position, this.speed);
-		}
+		OnMechanicalMove(position, speed);
 	}
 
 	void updatePosition() {
@@ -84,8 +85,4 @@ public interface UsesMechanicalPosition {
 
 	void onSettingMechanicalPosition(Vector2 position);
 
-}
-
-public interface Mechanism {
-	void onMechanicalUpdate(Vector2 position, Vector2 speed);
 }

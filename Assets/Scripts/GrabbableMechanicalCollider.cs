@@ -57,7 +57,12 @@ public class GrabbableMechanicalCollider : MonoBehaviour {
 		targetMechanicalMove.xStart = xStart;
 		targetMechanicalMove.yStart = yStart;
 		targetMechanicalMove.invertYMovement = invertXParamater;
-		targetMechanicalMove.setMechanisms();
+
+
+		// TODO make this less janky
+		LockingMechanism lockingMechanism = GameObject.Find("LockingMechanism").GetComponent<LockingMechanism>();
+		lockingMechanism.targetMechanicalMove = targetMechanicalMove;
+		lockingMechanism.registerMoveEvents();
 	}
 
 	public void configureMechanicalController() {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LockingMechanism : MonoBehaviour, Mechanism {
+public class LockingMechanism : MonoBehaviour{
 
 	public float lockDistance = .01f;
 	private bool positiveEngaged = false;
@@ -10,15 +10,23 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 	public delegate void LockExitAction(bool isPositive);
 	public event LockEnterAction OnLockEnter;
 	public event LockExitAction OnLockExit;
-	public AudioClip switchMovingSound;
-	private AudioSource audioSource;
-	private float lastStopped = 0;
+	public MechanicalMove targetMechanicalMove;
+	public delegate void LockAction(Vector2 position, Vector2 speed);
+	public event LockAction OnLockMove;
+	public event LockAction OnLockMoveEnter;
+	public event LockAction OnLockMoveExit;
 
 
 
 	// Use this for initialization
 	void Start () {
-		audioSource = GameObject.Find ("AudioSource").GetComponent<AudioSource>();
+
+	}
+
+	public void registerMoveEvents() {
+		targetMechanicalMove.OnMechanicalMove += onMechanicalUpdate;
+		targetMechanicalMove.OnEnterMechanicalMove += onEnterMove;
+		targetMechanicalMove.OnExitMechanicalMove += onExitMove;
 	}
 	
 	// Update is called once per frame
@@ -53,6 +61,21 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 		}
 	}
 
+	void onExitMove(Vector2 position, Vector2 speed) {
+		if(OnLockMoveExit != null) {
+			OnLockMoveExit(position, speed);
+		}
+
+	}
+
+	void onEnterMove(Vector2 position, Vector2 speed) {
+		if(OnLockMoveEnter != null) {
+			OnLockMoveEnter(position, speed);
+		}
+
+	}
+
+
 	void triggerExitEvent() {
 
 		if(OnLockExit != null) {
@@ -81,18 +104,9 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 	}
 
 	public void onMechanicalUpdate(Vector2 position, Vector2 speed) {
-		if(speed.x != 0f) {
-			if(!audioSource.isPlaying) {
-				audioSource.clip = switchMovingSound;
-				audioSource.Play();
-			}
-		} else {
-			float timeSinceStop = Time.time - lastStopped;
-			if(audioSource.isPlaying && timeSinceStop > .8f) {
-				audioSource.Pause();
-				lastStopped = Time.time;
-			}
-		} 
+		if(OnLockMove != null) {
+			OnLockMove(position, speed);
+		}
 		triggerLockEvent (position, speed);
 		
 	}
