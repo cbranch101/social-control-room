@@ -14,13 +14,10 @@ public class PostDataHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine("updatePostData");
-		ClickButtonOnGrab targetButton = GameObject.Find ("Button_Base").GetComponent<ClickButtonOnGrab>();
-		targetButton.OnClick += onMainButtonClick;
-
+		startPostUpdate();
 	}
 
-	void onMainButtonClick() {
+	public void startPostUpdate() {
 		StartCoroutine("updatePostData");
 	}
 	

@@ -10,23 +10,13 @@ public class LockingMechanism : MonoBehaviour{
 	public delegate void LockExitAction(bool isPositive);
 	public event LockEnterAction OnLockEnter;
 	public event LockExitAction OnLockExit;
-	public MechanicalMove targetMechanicalMove;
 	public delegate void LockAction(Vector2 position, Vector2 speed);
-	public event LockAction OnLockMove;
-	public event LockAction OnLockMoveEnter;
-	public event LockAction OnLockMoveExit;
-
 
 
 	// Use this for initialization
 	void Start () {
-
-	}
-
-	public void registerMoveEvents() {
+		MechanicalMove targetMechanicalMove = gameObject.GetComponent<MechanicalMove>();
 		targetMechanicalMove.OnMechanicalMove += onMechanicalUpdate;
-		targetMechanicalMove.OnEnterMechanicalMove += onEnterMove;
-		targetMechanicalMove.OnExitMechanicalMove += onExitMove;
 	}
 	
 	// Update is called once per frame
@@ -61,20 +51,6 @@ public class LockingMechanism : MonoBehaviour{
 		}
 	}
 
-	void onExitMove(Vector2 position, Vector2 speed) {
-		if(OnLockMoveExit != null) {
-			OnLockMoveExit(position, speed);
-		}
-
-	}
-
-	void onEnterMove(Vector2 position, Vector2 speed) {
-		if(OnLockMoveEnter != null) {
-			OnLockMoveEnter(position, speed);
-		}
-
-	}
-
 
 	void triggerExitEvent() {
 
@@ -104,9 +80,6 @@ public class LockingMechanism : MonoBehaviour{
 	}
 
 	public void onMechanicalUpdate(Vector2 position, Vector2 speed) {
-		if(OnLockMove != null) {
-			OnLockMove(position, speed);
-		}
 		triggerLockEvent (position, speed);
 		
 	}

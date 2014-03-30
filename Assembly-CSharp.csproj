@@ -47,8 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GUIHandler.cs" />
+     <Compile Include="Assets\LeverController.cs" />
      <Compile Include="Assets\LoopingMoveSound.cs" />
-     <Compile Include="Assets\MovingSound.cs" />
      <Compile Include="Assets\Prefabs\ColorManager.cs" />
      <Compile Include="Assets\Prefabs\GrabTarget.cs" />
      <Compile Include="Assets\ReturnToCenter.cs" />
@@ -72,7 +72,9 @@
      <Compile Include="Assets\Scripts\PostDataImage.cs" />
      <Compile Include="Assets\Scripts\PostDataText.cs" />
      <Compile Include="Assets\Scripts\PostGuesser.cs" />
+     <Compile Include="Assets\Scripts\ReturnSwitchToCenter.cs" />
      <Compile Include="Assets\Scripts\StreakMode.cs" />
+     <Compile Include="Assets\Scripts\TranslateMouseToMechanicalMovement.cs" />
      <Compile Include="Assets\TestScripts\BobsDiceTestScript.cs" />
      <Compile Include="Assets\TestScripts\BobsTestScript.cs" />
      <Compile Include="Assets\TestScripts\ClipBoard.cs" />
@@ -144,6 +146,7 @@
      <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestRunner.cs" />
      <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\TestRunnerCallbackList.cs" />
      <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestingAssets\CallTesting.cs" />
+     <Compile Include="Assets\sound\LockSound.cs" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\Cursor.shader" />
      <None Include="Assets\Text Box\Shaders\CC Text Gradient.shader" />
      <None Include="Assets\UnityTestTools\Examples\AngryBotsTests\Shaders\Fx\ParticleAdditiveBlend.shader" />

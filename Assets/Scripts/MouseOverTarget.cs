@@ -5,11 +5,13 @@ using System.Linq;
 public class MouseOverTarget : MonoBehaviour {
 	
 	private bool isMousedOver;
-	private MouseOverable[] mouseOverables;
+
+	public delegate void MouseOverAction();
+	public event MouseOverAction OnMouseOverEnter;
+	public event MouseOverAction OnMouseOverExit;
 
 	// Use this for initialization
 	void Start () {
-		mouseOverables = gameObject.GetInterfaces<MouseOverable>();
 
 	}
 	
@@ -24,29 +26,16 @@ public class MouseOverTarget : MonoBehaviour {
 
 	public void triggerOnMouseOverEnter() {
 		isMousedOver = true;
-		foreach(MouseOverable mouseOverable in mouseOverables) {
-			if(mouseOverable != null) {
-				mouseOverable.onMouseOverEnter();
-			}
+		if(OnMouseOverEnter != null) {
+			OnMouseOverEnter();
 		}
-
 	}
 	
 	public void triggerOnMouseOverExit() {
 		isMousedOver = false;
-		foreach(MouseOverable mouseOverable in mouseOverables) {
-			if(mouseOverable != null) {
-				mouseOverable.onMouseOverExit();
-			}
+		if(OnMouseOverExit != null) {
+			OnMouseOverExit();
 		}
 	}
-
-}
-
-public interface MouseOverable {
-
-	void onMouseOverEnter();
-
-	void onMouseOverExit();
 
 }

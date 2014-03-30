@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ApplyMechanicalMoveOnGrab : MonoBehaviour, Grabbable {
+public class ApplyMechanicalMoveOnGrab : MonoBehaviour {
 
 	private LockingMechanism lockingMechanism;
 	private bool isGrabbed = false;
