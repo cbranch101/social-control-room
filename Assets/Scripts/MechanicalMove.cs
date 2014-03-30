@@ -13,10 +13,14 @@ public class MechanicalMove : MonoBehaviour {
 	public float yStart = 0.0f;
 	public bool invertXMovement = false;
 	public bool invertYMovement = false;
-	public UsesMechanicalPosition usesMechanicalPosition;
-	private List<Mechanism> mechanisms = new List<Mechanism>(); 
+	public delegate void UpdateAction(Vector2 position, Vector2 speed);
+	public event UpdateAction OnMechanicalMove;
+	public event UpdateAction OnEnterMechanicalMove;
+	public event UpdateAction OnExitMechanicalMove;
+
 
 	private Vector2 position;
+	private bool isMoving = false;
 	public Vector2 Position {
 		get {
 			return position;
@@ -25,29 +29,38 @@ public class MechanicalMove : MonoBehaviour {
 			Vector2 newPosition = value;
 			speed.x = newPosition.x - position.x;
 			speed.y = newPosition.y - position.y;
-			usesMechanicalPosition.onSettingMechanicalPosition(newPosition);
+			bool willBeMoving = (speed.x != 0f);
+			newPosition.x = Mathf.Clamp(newPosition.x, 0f, 1f);
+			newPosition.y = Mathf.Clamp(newPosition.x, 0f, 1f);
 			position = newPosition;
+			if(willBeMoving && !isMoving) {
+				if(OnEnterMechanicalMove != null) {
+					OnEnterMechanicalMove(position, speed);
+				}
+
+				isMoving = true;
+			}
+
+			if(!willBeMoving && isMoving) {
+				if(OnExitMechanicalMove != null) {
+					OnExitMechanicalMove(position, speed);
+				}
+
+				isMoving = false;
+			}
 		}
 	}
 
 	// Use this for initialization
 	void Start () {
-		
+		Vector2 startPosition = new Vector2(xStart, yStart);
+		Position = startPosition;
 	}
 
 	public Vector2 getSpeed() {
 		return speed;
 	}
-
-	public void setMechanisms() {
-		foreach(Transform child in gameObject.transform) {
-			Mechanism mechanism = child.transform.gameObject.GetComponent(typeof(Mechanism)) as Mechanism;
-			if(mechanism != null) {
-				mechanisms.Add (mechanism);
-			}
-		}
-	}
-
+	
 	public void setStartPosition() {
 		Vector2 startPosition = new Vector2(xStart, yStart);
 		Position = startPosition;
@@ -56,26 +69,26 @@ public class MechanicalMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		updatePosition();
-		updateMechansims();
-	}
-
-	void updateMechansims() {
-		foreach(Mechanism mechanism in mechanisms) {
-			mechanism.onMechanicalUpdate(this.position, this.speed);
+		if(OnMechanicalMove != null) {
+			OnMechanicalMove(position, speed);
 		}
-	}
 
+	}
+	
 	void updatePosition() {
 		Vector2 currentPosition = Position;
-		currentPosition.x = getUpdatedPositionAxis (movementAmount.x, currentPosition.x, invertXMovement);
+		currentPosition.x = getUpdatedPositionAxis (movementAmount.x, movementAmount.y, currentPosition.x, invertXMovement);
 		Position = currentPosition;
 	}
 
-	float getUpdatedPositionAxis(float movementAmountValue, float currentPosition, bool isInverted) {
+	float getUpdatedPositionAxis(float xMovement, float yMovement, float currentPosition, bool isInverted) {
 		float inversionFactor = isInverted ? 1.0f : -1.0f;
-		return currentPosition + (movementAmountValue * movementRate * inversionFactor);
+		if(currentPosition >= 0.5f) {
+			yMovement = yMovement * -1;
+		}
+		return currentPosition + (Time.deltaTime * (xMovement + yMovement) * movementRate * inversionFactor);
 	}
-	
+
 
 
 }
@@ -84,8 +97,4 @@ public interface UsesMechanicalPosition {
 
 	void onSettingMechanicalPosition(Vector2 position);
 
-}
-
-public interface Mechanism {
-	void onMechanicalUpdate(Vector2 position, Vector2 speed);
 }

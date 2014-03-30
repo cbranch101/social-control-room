@@ -48,16 +48,19 @@ public class GrabbableMechanicalCollider : MonoBehaviour {
 	}
 
 	public void configureMechanicalMove() {
-		targetMechanicalMove = objectWithMecanimController.GetComponent<MechanicalMove>();
-		UsesMechanicalPosition usesMechanicalPosition = objectWithMecanimController.GetComponent(typeof(UsesMechanicalPosition)) as UsesMechanicalPosition;
-		targetMechanicalMove.usesMechanicalPosition = usesMechanicalPosition;
-		targetMechanicalMove.movementRate = movementRate;
-		targetMechanicalMove.invertXMovement = invertXParamater;
-		targetMechanicalMove.invertYMovement = invertXParamater;
-		targetMechanicalMove.xStart = xStart;
-		targetMechanicalMove.yStart = yStart;
-		targetMechanicalMove.invertYMovement = invertXParamater;
-		targetMechanicalMove.setMechanisms();
+//		targetMechanicalMove = objectWithMecanimController.GetComponent<MechanicalMove>();
+//		UsesMechanicalPosition usesMechanicalPosition = objectWithMecanimController.GetComponent(typeof(UsesMechanicalPosition)) as UsesMechanicalPosition;
+//		targetMechanicalMove.usesMechanicalPosition = usesMechanicalPosition;
+//		targetMechanicalMove.movementRate = movementRate;
+//		targetMechanicalMove.invertXMovement = invertXParamater;
+//		targetMechanicalMove.invertYMovement = invertXParamater;
+//		targetMechanicalMove.xStart = xStart;
+//		targetMechanicalMove.yStart = yStart;
+//		targetMechanicalMove.invertYMovement = invertXParamater;
+//		// TODO make this less janky
+//		LockingMechanism lockingMechanism = GameObject.Find("LockingMechanism").GetComponent<LockingMechanism>();
+//		lockingMechanism.targetMechanicalMove = targetMechanicalMove;
+//		lockingMechanism.registerMoveEvents();
 	}
 
 	public void configureMechanicalController() {

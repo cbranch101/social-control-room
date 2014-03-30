@@ -23,18 +23,16 @@ public class GrabTarget : MonoBehaviour {
 		}
 	}
 
-	private Grabbable[] grabbables;
-	MouseOverTarget mouseOverTarget;
-	// Use this for initialization
-	void Start () {
-		mouseOverTarget = gameObject.GetComponent<MouseOverTarget>();
-		grabbables = gameObject.GetInterfaces<Grabbable>();
-	}
+	public delegate void GrabAction();
+	public event GrabAction OnGrab;
+	public event GrabAction OnGrabEnter;
+	public event GrabAction OnGrabExit;
 	
+	public MouseOverTarget mouseOverTarget;
+	// Use this for initialization
 	// Update is called once per frame
 	void Update () {
-		bool mouseIsDown = Input.GetMouseButton(0);
-		bool isMousedOver = mouseOverTarget.targetIsMousedOver();
+
 		if(!IsGrabbed) {
 			IsGrabbed = mouseOverTarget.targetIsMousedOver() ? Input.GetMouseButton(0) : false;
 		} else {
@@ -47,36 +45,27 @@ public class GrabTarget : MonoBehaviour {
 	}
 
 	void triggerGrabbed() {
-		foreach(Grabbable grabbable in grabbables) {
-			grabbable.onGrab();
+		if(OnGrab != null) {
+			OnGrab();
 		}
 	}
 
 	void triggerOnGrabEnter() {
-		foreach(Grabbable grabbable in grabbables) {
-			grabbable.onGrabEnter();
+		if(OnGrabEnter != null) {
+			OnGrabEnter();
 		}
 	}
 
 
 	void triggerOnGrabExit() {
-		foreach(Grabbable grabbable in grabbables) {
-			grabbable.onGrabExit();
+		if(OnGrabExit != null) {
+			OnGrabExit();
 		}
-
 	}
 
 	public bool targetIsGrabbed() {
 		return isGrabbed;
 	}
 	
-
-}
-
-public interface Grabbable {
-	
-	void onGrabExit();
-	void onGrab();
-	void onGrabEnter();
 
 }

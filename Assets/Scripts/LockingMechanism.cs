@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LockingMechanism : MonoBehaviour, Mechanism {
+public class LockingMechanism : MonoBehaviour{
 
 	public float lockDistance = .01f;
 	private bool positiveEngaged = false;
@@ -10,12 +10,13 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 	public delegate void LockExitAction(bool isPositive);
 	public event LockEnterAction OnLockEnter;
 	public event LockExitAction OnLockExit;
-
+	public delegate void LockAction(Vector2 position, Vector2 speed);
 
 
 	// Use this for initialization
 	void Start () {
-		
+		MechanicalMove targetMechanicalMove = gameObject.GetComponent<MechanicalMove>();
+		targetMechanicalMove.OnMechanicalMove += onMechanicalUpdate;
 	}
 	
 	// Update is called once per frame
@@ -50,6 +51,7 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 		}
 	}
 
+
 	void triggerExitEvent() {
 
 		if(OnLockExit != null) {
@@ -81,4 +83,6 @@ public class LockingMechanism : MonoBehaviour, Mechanism {
 		triggerLockEvent (position, speed);
 		
 	}
+
+
 }

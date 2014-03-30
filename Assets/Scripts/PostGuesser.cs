@@ -4,13 +4,17 @@ using System.Collections;
 public class PostGuesser : MonoBehaviour {
 
 	public ClickButtonOnGrab targetButton;
+	private PostDataHandler postDataHandler;
 	public LockingMechanism targetMechanism;
 	private Hashtable postData;
 	private string selectedPost = null;
 	public Light rightLight;
 	public Light leftLight;
+	public delegate void GuessAction(bool isCorrect);
+	public static event GuessAction OnPostGuess;
 	// Use this for initialization
 	void Start () {
+		postDataHandler = GameObject.Find ("PostDataHandler").GetComponent<PostDataHandler>();
 		rightLight.enabled = false;
 		leftLight.enabled = false;
 		PostDataHandler.OnPostDataReceived += updatePostData;
@@ -39,7 +43,17 @@ public class PostGuesser : MonoBehaviour {
 			if(isCorrect) {
 				Light lightToTurnOn = selectedPost == "right" ? rightLight : leftLight;
 				lightToTurnOn.enabled = true;
+			} else {
+
 			}
+			triggerOnGuess(isCorrect);
+		}
+	}
+
+	void triggerOnGuess(bool isCorrect) {
+		postDataHandler.startPostUpdate();
+		if(OnPostGuess != null) {
+			OnPostGuess(isCorrect);
 		}
 	}
 

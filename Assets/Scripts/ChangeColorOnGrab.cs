@@ -1,18 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChangeColorOnGrab : MonoBehaviour, Grabbable{
+public class ChangeColorOnGrab : MonoBehaviour{
 	
 	public Renderer targetMesh;
 	private ColorManager colorManager;
 	private ColorChanger colorChanger;
 	private Color grabbedColor;
 	private Color mouseOverColor;
-	private MouseOverTarget mouseOverTarget;
+	public MouseOverTarget mouseOverTarget;
+	public GrabTarget grabTarget;
 	
 	// Use this for initialization
-	void Start () {
-		mouseOverTarget = gameObject.GetComponent<MouseOverTarget>();
+
+	void Awake() {
 		colorManager = GameObject.Find ("ColorManager").GetComponent<ColorManager>();
 		grabbedColor = colorManager.grabbedColor;
 		mouseOverColor = colorManager.mouseOverColor;
@@ -20,14 +21,19 @@ public class ChangeColorOnGrab : MonoBehaviour, Grabbable{
 			gameObject.AddComponent<ColorChanger>();
 		}
 		colorChanger = gameObject.GetComponent<ColorChanger>();
+	}
+
+	void Start () {
 		colorChanger.targetMesh = targetMesh;
+		grabTarget.OnGrab += onGrab;
+		grabTarget.OnGrabExit += onGrabExit;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
-	
+
 	public void onGrabEnter() {
 
 	}	

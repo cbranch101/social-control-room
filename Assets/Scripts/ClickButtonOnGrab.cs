@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ClickButtonOnGrab : MonoBehaviour, Grabbable {
+public class ClickButtonOnGrab : MonoBehaviour {
 
 	public GameObject objectWithAnimator;
 	private Animator animator;
 	public delegate void ClickAction();
 	public event ClickAction OnClick;
+	public GrabTarget grabTarget;
 
 	// Use this for initialization
 	void Start () {
+		grabTarget.OnGrabEnter += onGrabEnter;
+		grabTarget.OnGrabExit += onGrabExit;
 		animator = objectWithAnimator.GetComponent<Animator>();
 	}
 	
@@ -20,11 +23,9 @@ public class ClickButtonOnGrab : MonoBehaviour, Grabbable {
 
 	public void onGrabEnter() {
 		animator.SetBool ("ButtonPushed", true);
-		OnClick();
-	}	
-
-	public void onGrab() {
-
+		if(OnClick != null) {
+			OnClick();
+		}
 	}	
 	
 	public void onGrabExit() {
