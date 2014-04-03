@@ -7,6 +7,8 @@ Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Asse
 EndProject
 Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-CSharp-Editor.csproj", "{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}"
 EndProject
+Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-UnityScript-firstpass.unityproj", "{8FF0300F-063E-AD92-2DCB-C5AF42331788}"
+EndProject
 Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-UnityScript.unityproj", "{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}"
 EndProject
 Project("{779FCBCB-CBC6-8F55-74D6-65D12DED6067}") = "social-control-room", "Assembly-UnityScript-Editor.unityproj", "{F96DE636-991A-FC7C-E401-C798041FB4BE}"
@@ -29,6 +31,10 @@ Global
 		{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3EED278-A63F-AE4B-C1A0-592ADAE3BEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF0300F-063E-AD92-2DCB-C5AF42331788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF0300F-063E-AD92-2DCB-C5AF42331788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF0300F-063E-AD92-2DCB-C5AF42331788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF0300F-063E-AD92-2DCB-C5AF42331788}.Release|Any CPU.Build.0 = Release|Any CPU
 		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03DBEF1F-6F71-4DB1-EB35-03FD6AB6176A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,7 +47,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																					GlobalSection(MonoDevelopProperties) = preSolution
+																																																					GlobalSection(MonoDevelopProperties) = preSolution
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
