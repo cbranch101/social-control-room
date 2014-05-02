@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 08159e5439adb3b42ae46bc4a75895c6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Foundation_C
+    100002: Gague Large
+    100004: Gague Small
+    100006: Light Array
+    100008: Light Group 1
+    100010: Light Group 2
+    100012: Middle Base
+    100014: //RootNode
+    100016: Number Dial
+    100018: Panel Door1
+    100020: Panel Door2
+    100022: Panel Door3
+    100024: Screen Actual
+    100026: Screen Actual 1
+    100028: Screen Actual 2
+    100030: Screen Actual 3
+    100032: Screen Lower 1
+    100034: Screen Lower 2
+    100036: Screen Upper 1
+    100038: Screen Upper 2
+    100040: TV Old
+    100042: Upper Panel 1
+    100044: Upper Panel 2
+    100046: Upper Panel 3
+    400000: Foundation_C
+    400002: Gague Large
+    400004: Gague Small
+    400006: Light Array
+    400008: Light Group 1
+    400010: Light Group 2
+    400012: Middle Base
+    400014: //RootNode
+    400016: Number Dial
+    400018: Panel Door1
+    400020: Panel Door2
+    400022: Panel Door3
+    400024: Screen Actual
+    400026: Screen Actual 1
+    400028: Screen Actual 2
+    400030: Screen Actual 3
+    400032: Screen Lower 1
+    400034: Screen Lower 2
+    400036: Screen Upper 1
+    400038: Screen Upper 2
+    400040: TV Old
+    400042: Upper Panel 1
+    400044: Upper Panel 2
+    400046: Upper Panel 3
+    2300000: Foundation_C
+    2300002: Gague Large
+    2300004: Gague Small
+    2300006: Light Array
+    2300008: Light Group 1
+    2300010: Light Group 2
+    2300012: Middle Base
+    2300014: Number Dial
+    2300016: Panel Door1
+    2300018: Panel Door2
+    2300020: Panel Door3
+    2300022: Screen Actual
+    2300024: Screen Actual 1
+    2300026: Screen Actual 2
+    2300028: Screen Actual 3
+    2300030: Screen Lower 1
+    2300032: Screen Lower 2
+    2300034: Screen Upper 1
+    2300036: Screen Upper 2
+    2300038: TV Old
+    2300040: Upper Panel 1
+    2300042: Upper Panel 2
+    2300044: Upper Panel 3
+    3300000: Foundation_C
+    3300002: Gague Large
+    3300004: Gague Small
+    3300006: Light Array
+    3300008: Light Group 1
+    3300010: Light Group 2
+    3300012: Middle Base
+    3300014: Number Dial
+    3300016: Panel Door1
+    3300018: Panel Door2
+    3300020: Panel Door3
+    3300022: Screen Actual
+    3300024: Screen Actual 1
+    3300026: Screen Actual 2
+    3300028: Screen Actual 3
+    3300030: Screen Lower 1
+    3300032: Screen Lower 2
+    3300034: Screen Upper 1
+    3300036: Screen Upper 2
+    3300038: TV Old
+    3300040: Upper Panel 1
+    3300042: Upper Panel 2
+    3300044: Upper Panel 3
+    4300000: Foundation_C
+    4300002: Panel Door3
+    4300004: Panel Door2
+    4300006: Panel Door1
+    4300008: Screen Lower 2
+    4300010: Screen Actual
+    4300012: Screen Lower 1
+    4300014: Screen Actual
+    4300016: Light Group 1
+    4300018: Upper Panel 2
+    4300020: Screen Upper 1
+    4300022: Screen Actual
+    4300024: Upper Panel 1
+    4300026: Middle Base
+    4300028: Light Array
+    4300030: Gague Large
+    4300032: Gague Small
+    4300034: Number Dial
+    4300036: TV Old
+    4300038: Light Group 2
+    4300040: Upper Panel 3
+    4300042: Screen Upper 2
+    4300044: Screen Actual
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
